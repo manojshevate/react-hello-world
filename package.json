@@ -6,8 +6,12 @@
     "react-scripts": "0.8.5"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "react": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "redux": "^3.6.0",
+    "todomvc-app-css": "^2.0.6"
   },
   "scripts": {
     "start": "react-scripts start",
