@@ -5,10 +5,10 @@ import Header from '../components/Header'
 import MainSection from '../components/MainSection'
 import * as TodoActions from '../actions'
 
-const App = ({todos, actions}) => (
+const App = ({todos, filter, actions}) => (
   <div>
     <Header addTodo={actions.addTodo} />
-    <MainSection todos={todos} actions={actions} />
+    <MainSection todos={todos} filter={filter} actions={actions} />
   </div>
 )
 
@@ -18,7 +18,8 @@ App.propTypes = {
 }
 
 const mapStateToProps = state => ({
-  todos: state.todos
+  todos: state.todos,
+  filter: state.filter
 })
 
 const mapDispatchToProps = dispatch => ({
