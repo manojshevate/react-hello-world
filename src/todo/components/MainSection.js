@@ -39,15 +39,13 @@ export default class MainSection extends Component {
     const { todos, filter } = this.props
     const activeCount = todos.length - completedCount
 
-    if (todos.length) {
-      return (
-        <Footer completedCount={completedCount}
-                activeCount={activeCount}
-                filter={filter}
-                onClearCompleted={this.handleClearCompleted.bind(this)}
-                onShow={this.handleShow.bind(this)} />
-      )
-    }
+    return (
+      <Footer completedCount={completedCount}
+              activeCount={activeCount}
+              filter={filter}
+              onClearCompleted={this.handleClearCompleted.bind(this)}
+              onShow={this.handleShow.bind(this)} />
+    )
   }
 
   render() {
